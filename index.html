@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's 60th Birthday Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-header">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>David's 60th Birthday</h1>
+                <p>An Epic Adventure Awaits</p>
+                <div class="trip-summary">
+                    <div class="trip-phase">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>4 Days Pre-Cruise</span>
+                    </div>
+                    <div class="trip-phase">
+                        <i class="fas fa-ship"></i>
+                        <span>7 Day Cruise</span>
+                    </div>
+                    <div class="trip-phase">
+                        <i class="fas fa-mountain"></i>
+                        <span>4 Days Post-Cruise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="trip-nav">
+        <button class="nav-btn active" data-section="pre-cruise">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Pre-Cruise</span>
+        </button>
+        <button class="nav-btn" data-section="cruise">
+            <i class="fas fa-ship"></i>
+            <span>Cruise</span>
+        </button>
+        <button class="nav-btn" data-section="post-cruise">
+            <i class="fas fa-mountain"></i>
+            <span>Post-Cruise</span>
+        </button>
+    </nav>
+
+    <main class="main-content">
+        <!-- Pre-Cruise Section -->
+        <section id="pre-cruise" class="trip-section active">
+            <div class="section-header">
+                <h2><i class="fas fa-map-marked-alt"></i> Pre-Cruise Adventure</h2>
+                <p>4 Days of Exploration</p>
+            </div>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 1 - Arrival Day</h3>
+                    <span class="date">March 15, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-plane-arrival"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Airport Arrival</h4>
+                            <p class="time">2:30 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Miami International Airport
+                                <a href="#" class="map-link" onclick="openMap('Miami International Airport')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Welcome Dinner</h4>
+                            <p class="time">7:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Joe's Stone Crab
+                                <a href="#" class="map-link" onclick="openMap('Joe\'s Stone Crab Miami Beach')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 2 - Miami Exploration</h3>
+                    <span class="date">March 16, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>South Beach Tour</h4>
+                            <p class="time">10:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Art Deco District
+                                <a href="#" class="map-link" onclick="openMap('Art Deco District Miami Beach')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Rooftop Cocktails</h4>
+                            <p class="time">6:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Juvia Rooftop
+                                <a href="#" class="map-link" onclick="openMap('Juvia Miami Beach')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 3 - Cultural Day</h3>
+                    <span class="date">March 17, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Wynwood Walls</h4>
+                            <p class="time">11:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Wynwood Arts District
+                                <a href="#" class="map-link" onclick="openMap('Wynwood Walls Miami')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Cuban Cuisine</h4>
+                            <p class="time">1:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Versailles Restaurant
+                                <a href="#" class="map-link" onclick="openMap('Versailles Restaurant Miami')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 4 - Embarkation Day</h3>
+                    <span class="date">March 18, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Cruise Check-in</h4>
+                            <p class="time">1:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Port of Miami
+                                <a href="#" class="map-link" onclick="openMap('Port of Miami')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Sail Away Party</h4>
+                            <p class="time">5:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Pool Deck
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cruise Section -->
+        <section id="cruise" class="trip-section">
+            <div class="section-header">
+                <h2><i class="fas fa-ship"></i> Caribbean Cruise</h2>
+                <p>7 Days at Sea</p>
+            </div>
+
+            <div class="cruise-info">
+                <h3>Daily Schedule</h3>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <i class="fas fa-coffee"></i>
+                        <span>Breakfast: 7:00 AM - 10:00 AM</span>
+                    </div>
+                    <div class="schedule-item">
+                        <i class="fas fa-utensils"></i>
+                        <span>Lunch: 12:00 PM - 3:00 PM</span>
+                    </div>
+                    <div class="schedule-item">
+                        <i class="fas fa-wine-glass"></i>
+                        <span>Dinner: 6:00 PM & 8:30 PM</span>
+                    </div>
+                    <div class="schedule-item">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Shows: 7:00 PM & 9:30 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 5 - At Sea</h3>
+                    <span class="date">March 19, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Pool Games</h4>
+                            <p class="time">11:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Main Pool Deck
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Live Jazz Music</h4>
+                            <p class="time">9:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Atrium Lounge
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 6 - Cozumel, Mexico</h3>
+                    <span class="date">March 20, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Snorkeling Excursion</h4>
+                            <p class="time">9:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Palancar Reef
+                                <a href="#" class="map-link" onclick="openMap('Palancar Reef Cozumel')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Mexican Market Tour</h4>
+                            <p class="time">2:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Cozumel Downtown
+                                <a href="#" class="map-link" onclick="openMap('Cozumel Downtown Market')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 7 - At Sea</h3>
+                    <span class="date">March 21, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Spa Day</h4>
+                            <p class="time">10:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Vitality Spa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Birthday Celebration Dinner</h4>
+                            <p class="time">8:30 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Specialty Restaurant
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 8 - Jamaica</h3>
+                    <span class="date">March 22, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Dunn's River Falls</h4>
+                            <p class="time">8:30 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Ocho Rios, Jamaica
+                                <a href="#" class="map-link" onclick="openMap('Dunns River Falls Jamaica')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Reggae Beach Bar</h4>
+                            <p class="time">3:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Margaritaville Ocho Rios
+                                <a href="#" class="map-link" onclick="openMap('Margaritaville Ocho Rios')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 9 - Grand Cayman</h3>
+                    <span class="date">March 23, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Stingray City</h4>
+                            <p class="time">9:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Stingray City Sandbar
+                                <a href="#" class="map-link" onclick="openMap('Stingray City Grand Cayman')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Caribbean Seafood</h4>
+                            <p class="time">1:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                The Wharf Restaurant
+                                <a href="#" class="map-link" onclick="openMap('The Wharf Restaurant Grand Cayman')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 10 - Roatan, Honduras</h3>
+                    <span class="date">March 24, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Zip Line Adventure</h4>
+                            <p class="time">9:30 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Gumbalimba Park
+                                <a href="#" class="map-link" onclick="openMap('Gumbalimba Park Roatan')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Beach Relaxation</h4>
+                            <p class="time">2:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                West Bay Beach
+                                <a href="#" class="map-link" onclick="openMap('West Bay Beach Roatan')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 11 - At Sea</h3>
+                    <span class="date">March 25, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Farewell Cocktail Party</h4>
+                            <p class="time">6:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Sky Bar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Captain's Farewell Dinner</h4>
+                            <p class="time">8:30 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Main Dining Room
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post-Cruise Section -->
+        <section id="post-cruise" class="trip-section">
+            <div class="section-header">
+                <h2><i class="fas fa-mountain"></i> Post-Cruise Adventure</h2>
+                <p>4 More Days of Fun</p>
+            </div>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 12 - Key West</h3>
+                    <span class="date">March 26, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Hemingway House</h4>
+                            <p class="time">10:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Ernest Hemingway House
+                                <a href="#" class="map-link" onclick="openMap('Hemingway House Key West')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Sunset at Mallory Square</h4>
+                            <p class="time">6:30 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Mallory Square
+                                <a href="#" class="map-link" onclick="openMap('Mallory Square Key West')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 13 - Everglades</h3>
+                    <span class="date">March 27, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Airboat Tour</h4>
+                            <p class="time">9:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Everglades National Park
+                                <a href="#" class="map-link" onclick="openMap('Everglades National Park')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Alligator Grill</h4>
+                            <p class="time">12:30 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Everglades Restaurant
+                                <a href="#" class="map-link" onclick="openMap('Everglades Restaurant')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 14 - Orlando</h3>
+                    <span class="date">March 28, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Universal Studios</h4>
+                            <p class="time">9:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Universal Orlando Resort
+                                <a href="#" class="map-link" onclick="openMap('Universal Orlando Resort')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-beer"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Butterbeer & Dinner</h4>
+                            <p class="time">7:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                The Wizarding World
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Day 15 - Departure</h3>
+                    <span class="date">March 29, 2024</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Farewell Brunch</h4>
+                            <p class="time">10:00 AM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Hotel Restaurant
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Airport Departure</h4>
+                            <p class="time">3:00 PM</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Orlando International Airport
+                                <a href="#" class="map-link" onclick="openMap('Orlando International Airport')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>🎉 Happy 60th Birthday, David! 🎉</p>
+        <p>Adventure awaits at every turn!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
