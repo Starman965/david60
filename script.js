@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', loadSavedRatings);
 
 // Countdown timer to trip start
 function updateCountdown() {
-    const tripStart = new Date('2024-10-05T14:00:00');
+    const tripStart = new Date('2025-09-27T10:00:00');
     const now = new Date();
     const difference = tripStart - now;
     

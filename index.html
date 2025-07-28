@@ -13,15 +13,19 @@
         <div class="hero-overlay">
             <div class="hero-content">
                 <h1>David's 60th Birthday</h1>
-                <p>An Epic Adventure Awaits</p>
+                <p>A 3-Week European Adventure</p>
                 <div class="trip-summary">
                     <div class="trip-phase">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <span>Pre-Cruise Adventure</span>
+                        <i class="fas fa-city"></i>
+                        <span>Prague & Budapest</span>
                     </div>
                     <div class="trip-phase">
                         <i class="fas fa-ship"></i>
-                        <span>7 Day Danube Cruise</span>
+                        <span>Danube River Cruise</span>
+                    </div>
+                    <div class="trip-phase">
+                        <i class="fas fa-sun"></i>
+                        <span>Puglia & Rome</span>
                     </div>
                     <div class="trip-phase">
                         <i class="fas fa-suitcase"></i>
@@ -34,12 +38,16 @@
 
     <nav class="trip-nav">
         <button class="nav-btn active" data-section="pre-cruise">
-            <i class="fas fa-map-marked-alt"></i>
-            <span>Pre-Cruise</span>
+            <i class="fas fa-city"></i>
+            <span>Prague & Budapest</span>
         </button>
         <button class="nav-btn" data-section="cruise">
             <i class="fas fa-ship"></i>
             <span>Cruise</span>
+        </button>
+        <button class="nav-btn" data-section="post-cruise">
+            <i class="fas fa-sun"></i>
+            <span>Puglia & Rome</span>
         </button>
         <button class="nav-btn" data-section="packing">
             <i class="fas fa-suitcase"></i>
@@ -51,26 +59,169 @@
         <!-- Pre-Cruise Section -->
         <section id="pre-cruise" class="trip-section active">
             <div class="section-header">
-                <h2><i class="fas fa-map-marked-alt"></i> Pre-Cruise Adventure</h2>
-                <p>Coming Soon - Details Being Finalized</p>
+                <h2><i class="fas fa-city"></i> Prague & Budapest Adventure</h2>
+                <p>8 Days in Central Europe's Finest Cities</p>
             </div>
-            
-            <div class="day-card placeholder-card">
-                <div class="day-header">
-                    <h3>Pre-Cruise Activities</h3>
-                    <span class="date">October 2024</span>
+
+            <div class="travel-card">
+                <div class="travel-header">
+                    <h3><i class="fas fa-plane"></i> Journey Begins</h3>
+                    <span class="date">September 27, 2025</span>
                 </div>
                 <div class="activities">
                     <div class="activity-item">
                         <div class="activity-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-plane-departure"></i>
                         </div>
                         <div class="activity-details">
-                            <h4>Itinerary Being Planned</h4>
-                            <p class="time">TBD</p>
+                            <h4>Fly SFO → Prague</h4>
+                            <p class="time">United Airlines</p>
                             <p class="location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                Exciting adventures await! Details coming soon...
+                                San Francisco to Prague
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Prague Luxury Stay</h3>
+                    <span class="date">September 27 - October 1, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Exclusive Resorts - Cesina Flat</h4>
+                            <p class="time">4 Nights</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Prague, Czech Republic
+                                <a href="#" class="map-link" onclick="openMap('Prague Czech Republic')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-castle"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Prague Castle & Old Town</h4>
+                            <p class="time">Multiple Days</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Historic Prague
+                                <a href="#" class="map-link" onclick="openMap('Prague Castle')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-beer"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Czech Cuisine & Beer Culture</h4>
+                            <p class="time">Various Times</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Traditional Czech Restaurants
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-header">
+                    <h3><i class="fas fa-train"></i> Prague to Budapest</h3>
+                    <span class="date">October 1, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Scenic Train Journey</h4>
+                            <p class="time">Afternoon Departure</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Prague → Budapest
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Budapest Pre-Cruise</h3>
+                    <span class="date">October 1 - 5, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Four Seasons Hotel Budapest</h4>
+                            <p class="time">4 Nights</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Chain Bridge, Budapest
+                                <a href="#" class="map-link" onclick="openMap('Four Seasons Budapest')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-hot-tub"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Széchenyi Thermal Baths</h4>
+                            <p class="time">Relaxation Day</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                City Park, Budapest
+                                <a href="#" class="map-link" onclick="openMap('Széchenyi Thermal Baths Budapest')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-wine-glass"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Hungarian Fine Dining</h4>
+                            <p class="time">Evening</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Michelin-starred Restaurants
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Buda Castle & Parliament Tour</h4>
+                            <p class="time">Full Day</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Iconic Budapest Sites
                             </p>
                         </div>
                     </div>
@@ -109,8 +260,8 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Saturday, October 5 - Embarkation</h3>
-                    <span class="date">Vilshofen, Germany</span>
+                    <h3>Sunday, October 5 - Embarkation</h3>
+                    <span class="date">Budapest, Hungary</span>
                 </div>
                 <div class="activities">
                     <div class="activity-item">
@@ -147,7 +298,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Sunday, October 6 - Budapest</h3>
+                    <h3>Monday, October 6 - Budapest</h3>
                     <span class="date">Hungary</span>
                 </div>
                 <div class="activities">
@@ -188,7 +339,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Monday, October 7 - Bratislava</h3>
+                    <h3>Tuesday, October 7 - Bratislava</h3>
                     <span class="date">Slovakia</span>
                 </div>
                 <div class="activities">
@@ -242,7 +393,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Tuesday, October 8 - Vienna</h3>
+                    <h3>Wednesday, October 8 - Vienna</h3>
                     <span class="date">Austria</span>
                 </div>
                 <div class="activities">
@@ -309,7 +460,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Wednesday, October 9 - Krems & Spitz</h3>
+                    <h3>Thursday, October 9 - Krems & Spitz</h3>
                     <span class="date">Austria</span>
                 </div>
                 <div class="activities">
@@ -402,7 +553,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Thursday, October 10 - Linz</h3>
+                    <h3>Friday, October 10 - Linz</h3>
                     <span class="date">Austria</span>
                 </div>
                 <div class="activities">
@@ -482,7 +633,7 @@
 
             <div class="day-card">
                 <div class="day-header">
-                    <h3>Friday, October 11 - Passau & Vilshofen</h3>
+                    <h3>Saturday, October 11 - Passau & Vilshofen</h3>
                     <span class="date">Germany</span>
                 </div>
                 <div class="activities">
@@ -516,19 +667,6 @@
                         </div>
                     </div>
                     <div class="activity-item">
-                        <div class="activity-icon activity">
-                            <i class="fas fa-biking"></i>
-                        </div>
-                        <div class="activity-details">
-                            <h4>River Inn Bike Tour</h4>
-                            <p class="time">Morning</p>
-                            <p class="location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                River Inn Path
-                            </p>
-                        </div>
-                    </div>
-                    <div class="activity-item">
                         <div class="activity-icon lounge selected birthday-special">
                             <i class="fas fa-beer"></i>
                         </div>
@@ -546,6 +684,252 @@
                     </div>
                 </div>
             </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Sunday, October 12 - Disembarkation</h3>
+                    <span class="date">Vilshofen, Germany</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Farewell & Disembarkation</h4>
+                            <p class="time">Morning</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Vilshofen, Germany
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post-Cruise Section -->
+        <section id="post-cruise" class="trip-section">
+            <div class="section-header">
+                <h2><i class="fas fa-sun"></i> Puglia & Rome Adventure</h2>
+                <p>6 Days in Southern Italy's Paradise</p>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-header">
+                    <h3><i class="fas fa-plane"></i> Munich to Puglia</h3>
+                    <span class="date">October 12, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Fly Munich → Bari</h4>
+                            <p class="time">Lufthansa</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Munich to Puglia Bari Airport
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Puglia - Fasano Luxury</h3>
+                    <span class="date">October 12 - 16, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Masseria Torre Maizza</h4>
+                            <p class="time">4 Nights</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                A Rocco Forte Hotel, Fasano
+                                <a href="#" class="map-link" onclick="openMap('Masseria Torre Maizza Fasano Italy')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Adriatic Coast Beaches</h4>
+                            <p class="time">Daily Relaxation</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Private Beach Access
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-olive-branch"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Pugliese Cuisine & Olive Groves</h4>
+                            <p class="time">Farm-to-Table</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Local Masseria Tours
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Trulli Houses of Alberobello</h4>
+                            <p class="time">Day Trip</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                UNESCO World Heritage Site
+                                <a href="#" class="map-link" onclick="openMap('Alberobello Italy')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Luxury Spa Treatments</h4>
+                            <p class="time">Wellness Days</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Hotel Spa & Wellness Center
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-header">
+                    <h3><i class="fas fa-route"></i> Puglia to Rome</h3>
+                    <span class="date">October 16, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Private Driver or Train</h4>
+                            <p class="time">Scenic Journey</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Fasano → Rome
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <h3>Rome Grand Finale</h3>
+                    <span class="date">October 16 - 18, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon lounge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Exclusive Resorts - Hotel De La Ville</h4>
+                            <p class="time">2 Nights</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Via Sistina, Rome
+                                <a href="#" class="map-link" onclick="openMap('Hotel De La Ville Rome')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Vatican & Sistine Chapel</h4>
+                            <p class="time">Private Tour</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Vatican City
+                                <a href="#" class="map-link" onclick="openMap('Vatican City Rome')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon activity">
+                            <i class="fas fa-monument"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Colosseum & Roman Forum</h4>
+                            <p class="time">Skip-the-Line Tour</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Ancient Rome
+                                <a href="#" class="map-link" onclick="openMap('Colosseum Rome')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon dining">
+                            <i class="fas fa-wine-glass"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Farewell Dinner in Trastevere</h4>
+                            <p class="time">Final Evening</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Traditional Roman Restaurant
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-header">
+                    <h3><i class="fas fa-plane"></i> Journey Home</h3>
+                    <span class="date">October 18, 2025</span>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Fly Rome → SFO</h4>
+                            <p class="time">United Airlines</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Rome to San Francisco
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Packing Section -->
@@ -558,32 +942,32 @@
             <div class="packing-categories">
                 <div class="packing-card">
                     <div class="packing-header">
-                        <h3><i class="fas fa-tshirt"></i>Clothing Essentials</h3>
+                        <h3><i class="fas fa-tshirt"></i>Clothing for 3 Weeks</h3>
                     </div>
                     <div class="packing-list">
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Comfortable walking shoes (broken in!)</span>
+                            <span>Comfortable walking shoes (2 pairs, broken in!)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Layers for changing weather (Oct in Central Europe)</span>
+                            <span>Layers for Sept-Oct weather (Prague to Puglia)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Waterproof jacket or rain poncho</span>
+                            <span>Waterproof jacket (Central Europe rains)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Smart casual for dinner (no formal required)</span>
+                            <span>Smart casual for luxury hotels & cruise</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Warm sweater or fleece for deck time</span>
+                            <span>Beach attire for Puglia (swimwear, cover-ups)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Comfortable pants for hiking/walking tours</span>
+                            <span>Extra underwear & socks for 3 weeks</span>
                         </div>
                     </div>
                 </div>
@@ -627,7 +1011,7 @@
                     <div class="packing-list">
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Passport (valid 6+ months)</span>
+                            <span>Passport (valid 6+ months from Oct 2025)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
@@ -639,7 +1023,7 @@
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Prescription medications (in original bottles)</span>
+                            <span>Prescription medications (21+ day supply)</span>
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
@@ -647,7 +1031,7 @@
                         </div>
                         <div class="packing-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Sunscreen, first aid, hand sanitizer</span>
+                            <span>Multiple credit cards & travel money</span>
                         </div>
                     </div>
                 </div>
@@ -682,12 +1066,22 @@
 
                 <div class="packing-card weather-card">
                     <div class="packing-header">
-                        <h3><i class="fas fa-cloud-sun"></i> October Weather Guide</h3>
+                        <h3><i class="fas fa-cloud-sun"></i> Sep-Oct 2025 Weather Guide</h3>
                     </div>
                     <div class="weather-info">
                         <div class="weather-item">
                             <div class="weather-location">
-                                <h4>Budapest & Vienna</h4>
+                                <h4>Prague (Late Sept)</h4>
+                                <p>Crisp Autumn</p>
+                            </div>
+                            <div class="weather-temp">
+                                <span class="high">18°C (64°F)</span>
+                                <span class="low">8°C (46°F)</span>
+                            </div>
+                        </div>
+                        <div class="weather-item">
+                            <div class="weather-location">
+                                <h4>Budapest & Danube (Oct)</h4>
                                 <p>Cool & Crisp</p>
                             </div>
                             <div class="weather-temp">
@@ -697,17 +1091,17 @@
                         </div>
                         <div class="weather-item">
                             <div class="weather-location">
-                                <h4>Danube Valley</h4>
-                                <p>Mild Days, Cool Nights</p>
+                                <h4>Puglia (Mid-Oct)</h4>
+                                <p>Warm & Sunny</p>
                             </div>
                             <div class="weather-temp">
-                                <span class="high">13°C (55°F)</span>
-                                <span class="low">5°C (41°F)</span>
+                                <span class="high">22°C (72°F)</span>
+                                <span class="low">15°C (59°F)</span>
                             </div>
                         </div>
                         <div class="weather-tip">
                             <i class="fas fa-lightbulb"></i>
-                            <span>Pack layers! Perfect weather for walking tours and castle hikes.</span>
+                            <span>Pack layers for Northern Europe, beach clothes for Southern Italy!</span>
                         </div>
                     </div>
                 </div>
