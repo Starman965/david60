@@ -14,8 +14,8 @@ body {
 /* Hero Header */
 .hero-header {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%234facfe"/><stop offset="100%" style="stop-color:%2300f2fe"/></linearGradient></defs><rect width="1000" height="600" fill="url(%23bg)"/><circle cx="200" cy="150" r="50" fill="rgba(255,255,255,0.1)"/><circle cx="800" cy="400" r="80" fill="rgba(255,255,255,0.05)"/><polygon points="500,100 600,300 400,300" fill="rgba(255,255,255,0.1)"/></svg>');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                url('budapest_header.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -475,4 +475,211 @@ body {
 
 .scroll-indicator i {
     font-size: 1.2rem;
+}
+
+/* Selected Activity Styling */
+.activity-icon.selected {
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.activity-icon.selected::after {
+    content: '✓';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #fff;
+    color: #4CAF50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #4CAF50;
+}
+
+/* Packing Section Styles */
+.packing-categories {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.packing-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.packing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.packing-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.packing-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.packing-header i {
+    margin-right: 0.5rem;
+    color: #ffd700;
+}
+
+.packing-list {
+    padding: 1.5rem;
+}
+
+.packing-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.packing-item:last-child {
+    border-bottom: none;
+}
+
+.packing-item:hover {
+    background: #f8f9ff;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+}
+
+.packing-item i {
+    color: #4CAF50;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.packing-item span {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Weather Card Special Styling */
+.weather-card .packing-header {
+    background: linear-gradient(135deg, #ff7043 0%, #ff8a65 100%);
+}
+
+.weather-info {
+    padding: 1.5rem;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.weather-item:last-of-type {
+    border-bottom: none;
+}
+
+.weather-location h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: #333;
+}
+
+.weather-location p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+.weather-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.weather-temp .high {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff7043;
+}
+
+.weather-temp .low {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.weather-tip {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.weather-tip i {
+    color: #ff7043;
+    font-size: 1.1rem;
+}
+
+.weather-tip span {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Placeholder card styling */
+.placeholder-card {
+    opacity: 0.8;
+    border: 2px dashed #ccc;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.placeholder-card .day-header {
+    background: linear-gradient(135deg, #6c757d 0%, #868e96 100%);
+}
+
+.placeholder-card .activity-icon {
+    background: linear-gradient(135deg, #adb5bd 0%, #ced4da 100%);
+}
+
+/* Responsive Design for Packing Section */
+@media (min-width: 768px) {
+    .packing-categories {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .weather-card {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .packing-categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .weather-card {
+        grid-column: 2 / 4;
+    }
 } 

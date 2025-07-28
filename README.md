@@ -1,6 +1,6 @@
 # 🎉 David's 60th Birthday Adventure Website
 
-A beautiful, mobile-first website design for celebrating a 60th birthday trip with a detailed itinerary covering 15 days of adventure including pre-cruise activities, a 7-day Caribbean cruise, and post-cruise exploration.
+A beautiful, mobile-first website design for celebrating a 60th birthday trip featuring a stunning **AmaWaterways Danube River Cruise** through Central Europe (October 5-11, 2024), complete with selected activities, comprehensive packing guide, and interactive features.
 
 ![Mobile-First Design](https://img.shields.io/badge/Mobile-First-brightgreen)
 ![Responsive](https://img.shields.io/badge/Responsive-Design-blue)
@@ -17,13 +17,15 @@ A beautiful, mobile-first website design for celebrating a 60th birthday trip wi
 - **Icon-coded activities** for quick recognition
 
 ### 🗓️ Trip Organization
-- **Three main sections**: Pre-Cruise (4 days), Cruise (7 days), Post-Cruise (4 days)
-- **Detailed daily itineraries** with times and locations
+- **Three main sections**: Pre-Cruise (TBD), Danube River Cruise (7 days), Packing Guide
+- **Real AmaWaterways itinerary**: Budapest → Bratislava → Vienna → Krems → Linz → Passau
+- **Selected activities highlighted**: Castle hikes, wine tastings, Oktoberfest celebration
 - **Activity categorization** with color-coded icons:
   - 🍽️ **Dining** (Red gradient)
-  - 🎯 **Activities** (Teal gradient)
+  - 🎯 **Activities** (Teal gradient) 
   - 🍸 **Lounge/Entertainment** (Orange gradient)
   - ⚪ **General** (Purple gradient)
+  - ✅ **Selected** (Green with checkmarks)
 
 ### 🗺️ Interactive Features
 - **Map integration** - Click any location to open in Google Maps or Apple Maps
@@ -32,11 +34,13 @@ A beautiful, mobile-first website design for celebrating a 60th birthday trip wi
 - **Scroll-to-top** indicator button
 - **Birthday special effects** with floating emojis
 
-### 🚢 Cruise-Specific Features
-- **Daily dining schedule** prominently displayed
-- **Port excursions** with detailed activities
-- **Ship activities** and entertainment
-- **Special birthday celebration** highlighting
+### 🚢 Danube River Cruise Features
+- **7-day European river cruise** through 4 countries
+- **Castle hikes and cultural tours** in historic cities
+- **Wine tastings** in Austrian vineyards
+- **Exclusive Oktoberfest celebration** for birthday
+- **Interactive maps** for all destinations
+- **Comprehensive packing guide** for October weather
 
 ## 📱 Mobile Optimization
 
@@ -168,7 +172,51 @@ David60/
 1. **Open the website**: Simply open `index.html` in any modern web browser
 2. **Test on mobile**: Use browser dev tools or access from your phone
 3. **Customize content**: Edit the HTML file to match your trip details
-4. **Share**: Host on any web server or share the files directly
+4. **Deploy to GitHub Pages**: Follow the deployment instructions below
+
+## 🌐 GitHub Pages Deployment
+
+To make your website live on the internet:
+
+### Initial Setup
+1. **Push to GitHub**: Make sure your code is uploaded to your GitHub repository
+   ```bash
+   git add .
+   git commit -m "Initial website commit"
+   git push origin master
+   ```
+
+### Enable GitHub Pages
+1. **Go to your repository** on GitHub.com
+2. **Click "Settings"** tab (top of the repository page)
+3. **Scroll down to "Pages"** in the left sidebar
+4. **Under "Source"**:
+   - Select "**Deploy from a branch**"
+   - Choose "**master**" branch
+   - Leave folder as "**/ (root)**"
+   - Click "**Save**"
+
+### Access Your Live Website
+- **Wait 2-3 minutes** for GitHub to build your site
+- **Your website will be live at**: `https://yourusername.github.io/repository-name/`
+- **Example**: `https://starman965.github.io/david60/`
+
+### Making Updates
+When you want to update your website:
+1. **Edit your files locally**
+2. **Commit and push changes**:
+   ```bash
+   git add .
+   git commit -m "Update trip details"
+   git push
+   ```
+3. **Website updates automatically** within 2-3 minutes
+
+### Sharing Your Website
+Once live, share the URL with:
+- 🏖️ **Fellow travelers** and family
+- 📱 **Social media** to showcase your adventure
+- 🎉 **Friends** to get them excited about your trip
 
 ## 🎯 Browser Support
 
